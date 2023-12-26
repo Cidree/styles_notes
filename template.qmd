@@ -40,3 +40,8 @@ selected_countries
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+```{r}
+#| tbl-cap: "casdfasdf asdf"
+flextable::flextable(selected_countries)
+```

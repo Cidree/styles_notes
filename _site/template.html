@@ -105,12 +105,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 background: #2D4156;
       }
 </style>
+<link href="site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="site_libs/tabwid-1.1.3/tabwid.js"></script>
 </head>
-<body>
+<body class="floating">
 
 <div id="quarto-search-results"></div>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Template Notes</h1>
             <p class="subtitle lead">Notes for Feature Engineering Course</p>
@@ -140,14 +142,15 @@ background: #2D4156;
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Contenidos</h2>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Contenidos</h2>
    
   <ul>
 <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto"><span class="header-section-number">1</span> Quarto</a></li>
   <li><a href="#running-code" id="toc-running-code" class="nav-link" data-scroll-target="#running-code"><span class="header-section-number">2</span> Running Code</a></li>
   </ul></nav>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><section id="quarto" class="level2" data-number="1"><h2 data-number="1" class="anchored" data-anchor-id="quarto">
@@ -196,6 +199,284 @@ background: #2D4156;
 </div>
 </div>
 <p>The <code>echo: false</code> option disables the printing of code (only output is displayed).</p>
+<div class="cell">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">flextable</span><span class="fu">::</span><span class="fu"><a href="https://davidgohel.github.io/flextable/reference/flextable.html">flextable</a></span><span class="op">(</span><span class="va">selected_countries</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div class="tabwid">
+<style>.cl-7cca0c36{}.cl-7cba12e0{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-7cbfd5fe{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-7cbfd612{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-7cbff732{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-7cbff73c{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-7cbff73d{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-7cbff73e{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-7cbff746{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-7cbff747{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style>
+<table data-quarto-disable-processing="true" class="cl-7cca0c36">
+<caption><p>casdfasdf asdf</p></caption>
+<thead><tr style="overflow-wrap:break-word;">
+<th class="cl-7cbff732"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">country</span></p></th>
+<th class="cl-7cbff732"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">continent</span></p></th>
+<th class="cl-7cbff732"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">year</span></p></th>
+<th class="cl-7cbff73c"><p class="cl-7cbfd612"><span class="cl-7cba12e0">life_exp</span></p></th>
+<th class="cl-7cbff73c"><p class="cl-7cbfd612"><span class="cl-7cba12e0">pop</span></p></th>
+<th class="cl-7cbff73c"><p class="cl-7cbfd612"><span class="cl-7cba12e0">gdp_percap</span></p></th>
+</tr></thead>
+<tbody>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Bosnia and Herzegovina</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">53.820</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">2,791,000</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">973.5332</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Bosnia and Herzegovina</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">74.852</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">4,552,198</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">7,446.2988</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Congo, Dem. Rep.</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">39.143</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">14,100,005</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">780.5423</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Congo, Dem. Rep.</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">46.462</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">64,606,759</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">277.5519</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Greece</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">65.860</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">7,733,250</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,530.6901</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Greece</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">79.483</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">10,706,290</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">27,538.4119</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Haiti</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Americas</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">37.579</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,201,488</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,840.3669</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Haiti</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Americas</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">60.916</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">8,502,814</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,201.6372</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Iraq</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">45.320</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">5,441,766</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">4,129.7661</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Iraq</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">59.545</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">27,499,638</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">4,471.0619</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Japan</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">63.030</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">86,459,025</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,216.9563</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Japan</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">82.603</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">127,467,972</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">31,656.0681</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">New Zealand</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Oceania</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">69.390</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,994,794</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">10,556.5757</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">New Zealand</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Oceania</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">80.204</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">4,115,771</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">25,185.0091</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Norway</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">72.670</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,327,728</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">10,095.4217</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Norway</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">80.196</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">4,627,926</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">49,357.1902</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Peru</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Americas</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">43.902</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">8,025,700</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,758.5234</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Peru</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Americas</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">71.421</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">28,674,757</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">7,408.9056</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Puerto Rico</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Americas</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">64.280</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">2,227,000</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,081.9598</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Puerto Rico</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Americas</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">78.746</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,942,491</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">19,328.7090</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Sweden</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">71.860</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">7,124,673</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">8,527.8447</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Sweden</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Europe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">80.884</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">9,031,088</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">33,859.7484</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Taiwan</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">58.500</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">8,550,362</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,206.9479</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Taiwan</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">78.400</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">23,174,294</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">28,718.2768</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Tunisia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">44.600</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,647,735</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,468.4756</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Tunisia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">73.923</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">10,276,158</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">7,092.9230</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Uganda</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">39.978</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">5,824,797</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">734.7535</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Uganda</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">51.542</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">29,170,398</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,056.3801</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">West Bank and Gaza</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">43.160</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,030,585</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">1,515.5923</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">West Bank and Gaza</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Asia</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">73.422</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">4,018,332</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,025.3498</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Zimbabwe</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff73d"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">1952</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">48.451</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">3,080,907</span></p></td>
+<td class="cl-7cbff73e"><p class="cl-7cbfd612"><span class="cl-7cba12e0">406.8841</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-7cbff746"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Zimbabwe</span></p></td>
+<td class="cl-7cbff746"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">Africa</span></p></td>
+<td class="cl-7cbff746"><p class="cl-7cbfd5fe"><span class="cl-7cba12e0">2007</span></p></td>
+<td class="cl-7cbff747"><p class="cl-7cbfd612"><span class="cl-7cba12e0">43.487</span></p></td>
+<td class="cl-7cbff747"><p class="cl-7cbfd612"><span class="cl-7cba12e0">12,311,143</span></p></td>
+<td class="cl-7cbff747"><p class="cl-7cbfd612"><span class="cl-7cba12e0">469.7093</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">

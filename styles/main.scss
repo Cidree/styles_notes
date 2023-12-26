@@ -28,3 +28,25 @@
   }
 }
 
+div.sourceCode,
+pre>code.sourceCode {
+    background-color: $color-black !important;
+    border: 0px;
+}
+
+div.sourceCode {
+  padding: .3rem;
+}
+
+.sourceCode {
+  border-radius: 3px;
+  padding: 0.5em;
+  overflow: auto;
+}
+
+.cell-output.cell-output-stdout {
+    background-color: $color-lightblue-2 !important;
+    border: 2px solid $color-gray-dark;
+}
+
+
