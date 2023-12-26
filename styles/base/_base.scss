@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /*good practice to have box-sizing:border-box in body*/
+}
+
+
+html {
+  font-size: 62.5%; // % of default size (16px ~ > 10px
+}
+
+/* Body elements */
+body{
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
+  padding: 3rem;
+  text-align: justify;
+}

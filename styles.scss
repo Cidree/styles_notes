@@ -1,0 +1,35 @@
+/*-- scss:defaults --*/
+$color-white: white;
+$color-green-light: #C5F8C9;
+$color-green-dark: #63B22F;
+$color-gray-light: #F5F5F5;
+$color-gray-dark: #777;
+$color-gray-dark-2: #52514D;
+$color-black: #180705;
+$color-darkblue: #2D4156;
+$color-lightblue: #A3D1D5;
+$color-lightblue-2: #DBEBEA;
+$color-lightred: #FAA6A6;
+$color-orange: #F05C28;
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&family=Source+Sans+3:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans&family=Roboto:wght@100&family=Source+Sans+3:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100&family=Open+Sans&family=Roboto:wght@100&family=Source+Sans+3:wght@400;500&display=swap');
+
+/*-- scss:variables --*/
+// Colors
+$body-color: $color-gray-dark-2;
+$link-color: $color-orange;
+// Fonts
+$font-family-sans-serif: 'Lato', sans-seif;
+//$font-family-monospace: 'Montserrat';
+// Code blocks
+$code-block-border-left: $color-orange;
+$code-block-border-left-size: 10px;
+// Inline code
+$code-bg: $color-lightblue;
+$code-color: $color-darkblue;
+// Callout colors
+$callout-color-note: $color-lightblue;
+$callout-color-tip: $color-green-light;
+$callout-color-important: $color-orange;

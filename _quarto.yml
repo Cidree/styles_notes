@@ -1,0 +1,16 @@
+project:
+  type: website
+format: 
+    html:
+        toc: true
+        toc-title: "Contenidos"
+        number-sections: true
+        theme: [flatly, styles/main.scss, styles.scss]
+        highlight-style: nord
+        code-link: true
+        backgroundcolor: "#FFFFF4"
+        title-block-banner-color: "#A3D1D5"
+        title-block-banner: "#2D4156"
+## Options
+editor_options: 
+  chunk_output_type: console

@@ -1,0 +1,42 @@
+---
+title: "Template Notes"
+subtitle: "Notes for Feature Engineering Course"
+author: "Adrián Cidre González"
+date: today
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+library(pacman)
+
+p_load(tidyverse, gghighlight, geomtextpath, scales, ggtext)
+```
+
+You can add options to executable code like this
+
+```{r}
+set.seed(666)
+selected_countries <- gapminder::gapminder |> 
+  janitor::clean_names() |> 
+  filter(
+    year %in% c(1952, 2007),
+    country %in% c(
+      sample(levels(gapminder::gapminder$country), 15), 
+      'Zimbabwe'
+    )
+  ) |> 
+  mutate(
+    year = factor(year),
+    country = factor(country, levels = unique(country)) # reset levels
+  )
+selected_countries
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

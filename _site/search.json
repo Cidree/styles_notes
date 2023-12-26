@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "template.html",
+    "href": "template.html",
+    "title": "Template Notes",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "template.html#quarto",
+    "href": "template.html#quarto",
+    "title": "Template Notes",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "template.html#running-code",
+    "href": "template.html#running-code",
+    "title": "Template Notes",
+    "section": "\n2 Running Code",
+    "text": "2 Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\nlibrary(pacman)\n\np_load(tidyverse, gghighlight, geomtextpath, scales, ggtext)\n\nYou can add options to executable code like this\n\nset.seed(666)\nselected_countries &lt;- gapminder::gapminder |&gt; \n  janitor::clean_names() |&gt; \n  filter(\n    year %in% c(1952, 2007),\n    country %in% c(\n      sample(levels(gapminder::gapminder$country), 15), \n      'Zimbabwe'\n    )\n  ) |&gt; \n  mutate(\n    year = factor(year),\n    country = factor(country, levels = unique(country)) # reset levels\n  )\nselected_countries\n\n# A tibble: 32 × 6\n   country                continent year  life_exp      pop gdp_percap\n   &lt;fct&gt;                  &lt;fct&gt;     &lt;fct&gt;    &lt;dbl&gt;    &lt;int&gt;      &lt;dbl&gt;\n 1 Bosnia and Herzegovina Europe    1952      53.8  2791000       974.\n 2 Bosnia and Herzegovina Europe    2007      74.9  4552198      7446.\n 3 Congo, Dem. Rep.       Africa    1952      39.1 14100005       781.\n 4 Congo, Dem. Rep.       Africa    2007      46.5 64606759       278.\n 5 Greece                 Europe    1952      65.9  7733250      3531.\n 6 Greece                 Europe    2007      79.5 10706290     27538.\n 7 Haiti                  Americas  1952      37.6  3201488      1840.\n 8 Haiti                  Americas  2007      60.9  8502814      1202.\n 9 Iraq                   Asia      1952      45.3  5441766      4130.\n10 Iraq                   Asia      2007      59.5 27499638      4471.\n# ℹ 22 more rows\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+  }
+]

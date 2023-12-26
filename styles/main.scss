@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/code_block";
+
+
+// Text of the navbar: home, projects...
+
+
+#title-block-header {
+  display: block;
+  text-align: center;
+}
+
+.quarto-title-banner {
+  
+  margin-top: 1rem;
+  
+  & h1.title {
+    color: $color-white;
+  }
+}
+
